@@ -31,7 +31,6 @@ const DayForecastScreen = (props: Props) => {
     const tabBarHeight = useBottomTabBarHeight();
 
     const { forecast, day } = props.route.params;
-
     const handleBackButton = () => {
         props.navigation.goBack();
     };

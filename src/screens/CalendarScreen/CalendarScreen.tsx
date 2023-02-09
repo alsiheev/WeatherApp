@@ -55,7 +55,8 @@ const CalendarScreen = (props: Props) => {
                                         0,
                                         0,
                                         0,
-                                    ) === day.timestamp
+                                    ) ===
+                                    new Date(day.timestamp).setHours(0, 0, 0, 0)
                                 );
                             }),
                             day: day.timestamp,

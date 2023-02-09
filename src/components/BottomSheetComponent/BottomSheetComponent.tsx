@@ -8,7 +8,7 @@ interface Props {
 
 const BottomSheetComponent = ({ children }: Props) => {
     const bottomSheetRef = useRef<BottomSheet>(null);
-    const snapPoints = useMemo(() => ['40%', '100%'], []);
+    const snapPoints = useMemo(() => ['30%', '100%'], []);
 
     return (
         <BottomSheet
